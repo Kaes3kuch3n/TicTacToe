@@ -32,6 +32,10 @@ public class Game {
         return activePlayer;
     }
 
+    public Field[][] getBoard() {
+        return board;
+    }
+
     public boolean draw(int positionX, int positionY) {
         if (!setField(positionX, positionY))
             return false;
